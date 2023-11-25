@@ -11,6 +11,7 @@ $darkgreen: #14251d;
     height: 56px;
     border: 0.5px solid grey;
     width: 88px;
+    cursor: pointer;
   }
   .backbuttonContainer {
     padding: 20px;
@@ -32,6 +33,7 @@ $darkgreen: #14251d;
   }
   .containerforCountry {
     padding-top: 20px;
+    // display: flex;
   }
   .containerForPostsDashboard {
     margin: 2% 6% 2% 1.5%;
@@ -89,7 +91,6 @@ $darkgreen: #14251d;
     margin-bottom: 0.4em;
   }
 
-  /*Flex items*/
   .list {
     display: flex;
     flex-wrap: wrap;
@@ -153,4 +154,13 @@ $darkgreen: #14251d;
       margin: 16px 0px 16px 0px;
     }
   }
+
+  // .MuiInputLabel-shrink {
+  //   opacity: 0;
+  //   transition: "all 0.2s ease-in";
+  //   display: none;
+  // }
+  // legend: {
+  //   display: "none";
+  // }
 }

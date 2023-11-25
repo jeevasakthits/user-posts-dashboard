@@ -72,6 +72,7 @@ function PostsHeader({
           disableClearable
           style={{
             display: "contents;",
+            cursor: "pointer",
           }}
           onChange={(e) => {
             setCountrySelected(e.target.textContent);

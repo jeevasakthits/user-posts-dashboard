@@ -11,8 +11,6 @@ export default function Posts() {
   const statVal = useLocation();
   const [countries, setCountries] = useState([]);
   const [countryTime, setCountryTime] = useState({});
-  const [error, setError] = useState(false);
-  const [showDropDown, setoShowDropDown] = useState(false);
   const [countrySelected, setCountrySelected] = useState("");
   const [countryTimeInSec, setCountryTimeInSec] = useState(0);
   const [loader, setLoader] = useState(false);
@@ -41,14 +39,12 @@ export default function Posts() {
             setCountryTimeInSec(getTime(res.data));
             setLoader(false);
           })
-          .catch((error) => {
-            setError(error);
-            setLoader(false);
+          .catch(() => {
+            alert("Something went worng!!!");
           });
       })
-      .catch((error) => {
-        setError(error);
-        setLoader(false);
+      .catch(() => {
+        alert("Something went worng!!!");
       });
   }, []);
 
@@ -60,9 +56,8 @@ export default function Posts() {
         setCountryTimeInSec(getTime(res.data));
         setLoader(false);
       })
-      .catch((error) => {
-        setError(error);
-        setLoader(false);
+      .catch(() => {
+        alert("Something went worng!!!");
       });
   };
 
@@ -109,11 +104,11 @@ export default function Posts() {
               </Grid>
             </Grid>
           </Grid>
-          <ul class="list">
+          <ul className="list">
             {userPosts.map((post, index) =>
               post.userId == userDetails.id ? (
-                <li class="list-item">
-                  <div class="list-content">
+                <li className="list-item">
+                  <div className="list-content">
                     <h2>{post.title}</h2>
                     <p>{post.body}</p>
                   </div>
