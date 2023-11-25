@@ -25,6 +25,7 @@ export default function Posts() {
       parseInt(time[2]) * 1000;
     return currentTimeSec;
   };
+
   useEffect(() => {
     setLoader(true);
     axios

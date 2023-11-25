@@ -11,6 +11,7 @@ export default function () {
   const [posts, setPosts] = useState([]);
   const [loader, setLoader] = useState(true);
   const modelRef = useRef();
+
   useEffect(() => {
     setLoader(true);
     const urls = [
@@ -41,6 +42,7 @@ export default function () {
     //     setError(error);
     //   });
   }, []);
+
   const getPostsCount = (userData) => {
     return posts.filter(function (user) {
       return user.userId == userData.id;
@@ -58,6 +60,7 @@ export default function () {
       modelRef.current.style.display = "none";
     }
   };
+
   const UserList = () => {
     return (
       <Grid container md={12} className="userContainer">
@@ -104,6 +107,7 @@ export default function () {
       </Grid>
     );
   };
+
   return (
     <Grid container md={12} className="homePageContainer">
       {loader ? (
