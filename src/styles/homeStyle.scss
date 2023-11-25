@@ -1,0 +1,47 @@
+$black: black;
+$skyblue: #c6fcff;
+$light-green: #80c8a4;
+$darkgreen: #14251d;
+
+.homePageContainer {
+  .pageTitle {
+    width: 100%;
+    height: 75px;
+    padding: 25px;
+    text-align: center;
+  }
+  .postNavigationLink {
+    text-decoration: none;
+    color: $black;
+  }
+  .loaderContainer {
+    position: fixed;
+    left: 49%;
+    top: 49%;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+  }
+  .userContainer {
+    border: 1px solid black;
+    margin: 6%;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  .userCartItem {
+    width: 100%;
+  }
+  .userCardContainer {
+    background-color: #c6fcff;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 13px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 600px) {
+    .postsCount {
+      margin-top: 5px;
+      text-align: left;
+    }
+  }
+}
