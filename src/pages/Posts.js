@@ -95,7 +95,7 @@ export default function Posts() {
                 <i> {userDetails.company.catchPhrase}</i>
               </Grid>
               <Grid item md={4} sm={4} xs={12} className="addressDetail">
-                <div className="userDetailHeader">Address/Contact Details</div>
+                <div className="userDetailHeader">Address</div>
                 <div> {userDetails.address.street}</div>
                 <div> {userDetails.address.city}</div>
                 <div> {userDetails.address.zipcode}</div>
@@ -103,6 +103,12 @@ export default function Posts() {
                 <div> {userDetails.phone}</div>
               </Grid>
             </Grid>
+            {/*<Grid md={12} className="mobemailContainer">
+              <div className="emailmobdiv">
+                <div> Email: {userDetails.email}</div>
+                <div> Phone No: {userDetails.phone}</div>
+              </div>
+    </Grid>*/}
           </Grid>
           <ul className="list">
             {userPosts.map((post, index) =>

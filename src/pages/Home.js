@@ -4,6 +4,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import { Link } from "react-router-dom";
 import "../styles/homeStyle.scss";
 import PostsList from "../components/PostsList";
+// import NewTab from "../assets/icons8-new-tab.svg";
 
 export default function () {
   const [users, setUsers] = useState([]);
@@ -74,6 +75,7 @@ export default function () {
                   className="postNavigationLink"
                 >
                   Name: {user.name}
+                  {/*<img src={NewTab} className="navigateIconStyle" />*/}
                 </Link>
               </Grid>
               <Grid

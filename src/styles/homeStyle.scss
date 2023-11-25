@@ -13,6 +13,9 @@ $darkgreen: #14251d;
   .postNavigationLink {
     text-decoration: none;
     color: $black;
+    color: dodgerblue;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
   }
   .loaderContainer {
     position: fixed;
@@ -37,6 +40,11 @@ $darkgreen: #14251d;
     border: 1px solid black;
     border-radius: 13px;
     margin-bottom: 32px;
+  }
+  .navigateIconStyle {
+    width: 17px;
+    height: 17px;
+    margin-bottom: -4px;
   }
   .modal {
     display: none;

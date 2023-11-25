@@ -17,7 +17,12 @@ $darkgreen: #14251d;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-size: 11px;
     // overflow-wrap: break-word;
+  }
+  .digits {
+    font-size: 20px;
+    font-family: monospace;
   }
   .timeControlButton {
     padding: 13px 40px 13px 40px;

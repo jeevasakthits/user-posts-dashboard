@@ -7,14 +7,20 @@ import TextField from "@mui/material/TextField";
 function Timer({ time, countryTimeData }) {
   return (
     <div className="timer">
-      <div className="countryTimeZone">{countryTimeData.timezone}</div>
+      <div className="countryTimeZone">
+        {countryTimeData?.datetime?.split("T")[0]}{" "}
+        {countryTimeData.abbreviation}
+        {/* countryTimeData.timezone */}
+      </div>
       <span className="digits">
-        {("0" + Math.floor((time / 3600000) % 24)).slice(-2)}:
+        {("0" + Math.floor((time / 3600000) % 24)).slice(-2)} :
       </span>
       <span className="digits">
-        {("0" + Math.floor((time / 60000) % 60)).slice(-2)}:
+        {" "}
+        {("0" + Math.floor((time / 60000) % 60)).slice(-2)} :
       </span>
       <span className="digits">
+        {" "}
         {("0" + Math.floor((time / 1000) % 60)).slice(-2)}
       </span>
     </div>
