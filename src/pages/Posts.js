@@ -13,7 +13,7 @@ export default function Posts() {
   const [countryTime, setCountryTime] = useState({});
   const [countrySelected, setCountrySelected] = useState("");
   const [countryTimeInSec, setCountryTimeInSec] = useState(0);
-  const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(true);
   const userDetails = statVal.state.user;
   const userPosts = statVal.state.posts;
 

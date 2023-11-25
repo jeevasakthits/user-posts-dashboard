@@ -9,7 +9,7 @@ import PostsList from "../components/PostsList";
 export default function () {
   const [users, setUsers] = useState([]);
   const [posts, setPosts] = useState([]);
-  const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(true);
   const modelRef = useRef();
   useEffect(() => {
     setLoader(true);
